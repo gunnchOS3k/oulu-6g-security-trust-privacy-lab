@@ -1,0 +1,4 @@
+[project]
+name = "oulu-6g-security-trust-privacy-lab"
+version = "0.1.0"
+requires-python = ">=3.11"
