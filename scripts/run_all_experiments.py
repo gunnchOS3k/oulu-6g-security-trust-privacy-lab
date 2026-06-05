@@ -1,11 +1,11 @@
 from pathlib import Path
-from oulu_6g_security.threat_model import stride_summary
-from oulu_6g_security.oran_security import oran_risks
-from oulu_6g_security.airan_attack_surface import airan_surface
-from oulu_6g_security.edge_telemetry_privacy import privacy_controls
-from oulu_6g_security.digital_twin_data_risk import twin_risks
-from oulu_6g_security.zero_trust_device import zt_principles
-from oulu_6g_security.report import compile_report
+from gunnchos_6g_security.threat_model import stride_summary
+from gunnchos_6g_security.oran_security import oran_risks
+from gunnchos_6g_security.airan_attack_surface import airan_surface
+from gunnchos_6g_security.edge_telemetry_privacy import privacy_controls
+from gunnchos_6g_security.digital_twin_data_risk import twin_risks
+from gunnchos_6g_security.zero_trust_device import zt_principles
+from gunnchos_6g_security.report import compile_report
 
 R=Path('results')
 R.mkdir(exist_ok=True)
