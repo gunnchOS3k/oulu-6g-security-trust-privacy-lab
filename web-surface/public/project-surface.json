@@ -1,0 +1,21 @@
+{
+  "repo": "oulu-6g-security-trust-privacy-lab",
+  "productName": "6G security preparation lab",
+  "family": "Oulu preparation",
+  "classification": "STATIC_RESEARCH_SURFACE_WORKER",
+  "acceptedSha": "d276579333a8254c7424e8df50c8824b200bc122",
+  "status": "STAGING_WORKER",
+  "summary": "Independent portfolio lab for 6G security, trust, and privacy preparation.",
+  "capabilities": [
+    "Read the preparation scope",
+    "Open the source repository"
+  ],
+  "limitations": [
+    "No Oulu affiliation is claimed",
+    "No security certification is claimed"
+  ],
+  "sourceUrl": "https://github.com/gunnchOS3k/oulu-6g-security-trust-privacy-lab",
+  "returnUrlEnv": "GUNNCHOS_PORTAL_URL",
+  "returnUrl": "https://gunnchos-site.gunnchos-finds.workers.dev",
+  "workerName": "gunnchos-oulu-security"
+}
