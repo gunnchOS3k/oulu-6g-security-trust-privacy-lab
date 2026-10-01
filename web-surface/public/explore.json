@@ -1,64 +1,73 @@
 {
   "schema": "gunnchos.surfacekit.v2",
   "measured_topology": false,
-  "diagram_note": "Reading aid built from repository headings. It is not a measured topology and it is not a live system.",
+  "diagram_note": "Risk lists copied from src/gunnchos_6g_security. The E2 and xApp strings are listed risk phrases, not a topology. This is not a measured security test.",
   "nodes": [
     {
-      "id": "overview",
-      "label": "Overview"
+      "id": "stride",
+      "label": "STRIDE list"
     },
     {
-      "id": "what-this-is",
-      "label": "What this is"
+      "id": "airan",
+      "label": "AI-RAN risks"
     },
     {
-      "id": "why-wireless-engineering-readiness-cares",
-      "label": "Why wireless engineering readiness cares"
-    },
-    {
-      "id": "beginner-mental-model",
-      "label": "Beginner mental model"
+      "id": "privacy",
+      "label": "Privacy controls"
     }
   ],
   "rows": [
     {
-      "source": "README.md",
-      "scenario_id": "Overview",
-      "site_id": "Oulu preparation",
-      "ethical_framing": "# gunnchOS 6G Security, Trust & Privacy Lab > This repo is part of the **gunnchOS wireless engineering spine**: hands-on labs that strengthen the technical foundation behind 7GC, AI-RAN, RF, DSP, MIMO, measurement, and **6G PhD readiness** for target wireless communications engineering programs. Not affiliated with any university."
+      "source": "src/gunnchos_6g_security/threat_model.py",
+      "scenario_id": "STRIDE list",
+      "evidence_class": "educational_code",
+      "ethical_framing": "stride_summary returns Spoofing, Tampering, Repudiation, InfoDisclosure, DoS, and Elevation. results/threat_model.md repeats that list.",
+      "stride": "Spoofing, Tampering, Repudiation, InfoDisclosure, DoS, Elevation"
     },
     {
-      "source": "README.md",
-      "scenario_id": "What this is",
-      "site_id": "Oulu preparation",
-      "ethical_framing": "Research and teaching lab for **target wireless communications engineering programs**-aligned skills \u2014 built as an independent portfolio project."
+      "source": "src/gunnchos_6g_security/airan_attack_surface.py",
+      "scenario_id": "AI-RAN risk list",
+      "evidence_class": "educational_code",
+      "ethical_framing": "airan_surface returns poisoning, model theft, and inference leakage.",
+      "risks": "poisoning, model theft, inference leakage"
     },
     {
-      "source": "README.md",
-      "scenario_id": "Why wireless engineering readiness cares",
-      "site_id": "Oulu preparation",
-      "ethical_framing": "Threat models for O-RAN, AI-RAN, edge telemetry, digital twins."
+      "source": "src/gunnchos_6g_security/edge_telemetry_privacy.py",
+      "scenario_id": "Privacy controls",
+      "evidence_class": "educational_code",
+      "ethical_framing": "privacy_controls returns aggregation and differential privacy stub.",
+      "controls": "aggregation, differential privacy stub"
     },
     {
-      "source": "README.md",
-      "scenario_id": "Beginner mental model",
-      "site_id": "Oulu preparation",
-      "ethical_framing": "Start with `docs/learning_notes.md`, run `make e2e`, open `results/figures/`."
+      "source": "src/gunnchos_6g_security/oran_security.py",
+      "scenario_id": "Listed O-RAN risk phrases",
+      "evidence_class": "educational_code",
+      "ethical_framing": "oran_risks returns the phrases E2 interface abuse and xApp supply chain. Those are risk strings in this file, not an interface diagram and not a testbed topology.",
+      "listed_phrases": "E2 interface abuse, xApp supply chain"
     },
     {
-      "source": "README.md",
-      "scenario_id": "Research question",
-      "site_id": "Oulu preparation",
-      "ethical_framing": "See `paper/draft.md`."
+      "source": "src/gunnchos_6g_security/federated_learning_privacy.py",
+      "scenario_id": "Federated learning note",
+      "evidence_class": "educational_code",
+      "ethical_framing": "fl_notes returns secure aggregation TODO.",
+      "status": "secure aggregation TODO"
     },
     {
-      "source": "README.md",
-      "scenario_id": "Commands",
-      "site_id": "Oulu preparation",
-      "ethical_framing": "make install && make test && make e2e"
+      "source": "src/gunnchos_6g_security/zero_trust_device.py",
+      "scenario_id": "Zero trust phrases",
+      "evidence_class": "educational_code",
+      "ethical_framing": "zt_principles returns verify explicitly and least privilege.",
+      "principles": "verify explicitly, least privilege"
     }
   ],
-  "sources": [],
+  "sources": [
+    "src/gunnchos_6g_security/threat_model.py",
+    "src/gunnchos_6g_security/airan_attack_surface.py",
+    "src/gunnchos_6g_security/edge_telemetry_privacy.py",
+    "src/gunnchos_6g_security/oran_security.py",
+    "src/gunnchos_6g_security/federated_learning_privacy.py",
+    "src/gunnchos_6g_security/zero_trust_device.py"
+  ],
   "sections": [
     {
       "id": "overview",
@@ -105,7 +114,7 @@
     "docs/diagrams/README.md",
     "docs/learning_notes.md"
   ],
-  "methods": "",
+  "methods": "Methods are the lists returned by src/gunnchos_6g_security: STRIDE, AI-RAN risks, privacy controls, and the O-RAN risk phrases. The O-RAN phrases are strings in oran_security.py, not an E2 or xApp topology. No attack was executed for this page.",
   "cards": [],
   "runtime_mode": "PRECOMPUTED",
   "runtime_boot": false
