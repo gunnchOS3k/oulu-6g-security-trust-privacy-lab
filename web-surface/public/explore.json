@@ -117,5 +117,6 @@
   "methods": "Methods are the lists returned by src/gunnchos_6g_security: STRIDE, AI-RAN risks, privacy controls, and the O-RAN risk phrases. The O-RAN phrases are strings in oran_security.py, not an E2 or xApp topology. No attack was executed for this page.",
   "cards": [],
   "runtime_mode": "PRECOMPUTED",
-  "runtime_boot": false
+  "runtime_boot": false,
+  "evidence_class": "REFERENCE_IMPLEMENTATION"
 }
